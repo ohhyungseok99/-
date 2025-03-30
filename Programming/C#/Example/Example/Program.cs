@@ -18,6 +18,8 @@
  * 기반으로 조건문을 작성하면 특정 명령문을 활성화하거나 비활성화하는 것이 가능하다.
  * 
  * Ex)
+ * #define PLATFORM_MOBILE
+ * 
  * #if PLATFORM_MOBILE
  *      // 모바일 플랫폼 명령문
  * #else
@@ -133,14 +135,14 @@ namespace Example
 		private static void Main_Structure(string[] args)
 		{
 #if EXAMPLE
-			//_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_01.CE01Example_01.Start(args);
+			_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_01.CE01Example_01.Start(args);
 			//_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_02.CE01Example_02.Start(args);
 			//_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_03.CE01Example_03.Start(args);
 			//_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_04.CE01Example_04.Start(args);
 			//_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_05.CE01Example_05.Start(args);
 			//_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_06.CE01Example_06.Start(args);
 			//_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_07.CE01Example_07.Start(args);
-			_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_08.CE01Example_08.Start(args);
+			//_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_08.CE01Example_08.Start(args);
 #elif PRACTICE
 
 #elif SOLUTION
@@ -152,7 +154,7 @@ namespace Example
 		private static void Main_Algorithm(string[] args)
 		{
 #if EXAMPLE
-			//_02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Example_01.CE01Example_01.Start(args);
+			_02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Example_01.CE01Example_01.Start(args);
 			//_02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Example_02.CE01Example_02.Start(args);
 			//_02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Example_03.CE01Example_03.Start(args);
 			//_02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Example_04.CE01Example_04.Start(args);
@@ -160,7 +162,7 @@ namespace Example
 			//_02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Example_06.CE01Example_06.Start(args);
 			//_02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Example_07.CE01Example_07.Start(args);
 			//_02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Example_08.CE01Example_08.Start(args);
-			_02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Example_09.CE01Example_09.Start(args);
+			//_02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Example_09.CE01Example_09.Start(args);
 #elif PRACTICE
 
 #elif SOLUTION

@@ -113,7 +113,7 @@ namespace Example._02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.
 			Console.WriteLine("{0} >= {1} = {2}", nValA, nValB, nValA >= nValB);
 			Console.WriteLine("{0} == {1} = {2}", nValA, nValB, nValA == nValB);
 			Console.WriteLine("{0} != {1} = {2}", nValA, nValB, nValA != nValB);
-
+			
 			/*
              * 논리 연산자의 피연산자는 논리 (bool) 자료형 데이터만 사용가능하기 때문에 
              * 정수와 같은 데이터를 비교 연산 등을 통해서 논리 자료형으로 변환해 줄 필요가 있다.

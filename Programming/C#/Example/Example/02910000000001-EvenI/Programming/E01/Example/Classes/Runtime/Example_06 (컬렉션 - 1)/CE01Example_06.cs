@@ -1,5 +1,5 @@
-//#define P_E01_EXAMPLE_06_01
-//#define P_E01_EXAMPLE_06_02
+#define P_E01_EXAMPLE_06_01
+#define P_E01_EXAMPLE_06_02
 #define P_E01_EXAMPLE_06_03
 
 using System;

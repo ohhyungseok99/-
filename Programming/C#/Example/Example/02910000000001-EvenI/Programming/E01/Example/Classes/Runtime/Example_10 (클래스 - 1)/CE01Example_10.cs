@@ -1,5 +1,5 @@
-//#define P_E01_EXAMPLE_10_01
-//#define P_E01_EXAMPLE_10_02
+#define P_E01_EXAMPLE_10_01
+#define P_E01_EXAMPLE_10_02
 #define P_E01_EXAMPLE_10_03
 
 using System;
@@ -33,6 +33,7 @@ using System.Threading.Tasks;
  * }
  * 
  * CSomeClass oSomeObj = new CSomeClass();
+ * oSomeObj.SomeMethod();
  * 
  * 위와 같이 정의 된 클래스는 자료형처럼 사용하는 것이 가능하며 new 키워드를 통해 사물 (객체) 을 
  * 생성하는 것이 가능하다. (+ 즉, 클래스는 사물을 생성하기 위한 틀처럼 활용된다는 것을 알 수 있다.)

@@ -1,5 +1,5 @@
-#define P_E01_EXAMPLE_10_01
-#define P_E01_EXAMPLE_10_02
+//#define P_E01_EXAMPLE_10_01
+//#define P_E01_EXAMPLE_10_02
 #define P_E01_EXAMPLE_10_03
 
 using System;
@@ -251,7 +251,7 @@ namespace Example._02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.
 				this.m_nHp = a_nHp;
 				this.m_nAtk = a_nAtk;
 			}
-
+			
 			/** 레벨을 반환한다 */
 			public int GetLv()
 			{
@@ -273,6 +273,12 @@ namespace Example._02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.
 			/** 레벨을 변경한다 */
 			public void SetLv(int a_nLv)
 			{
+				if(a_nLv > 45)
+				{
+					Console.WriteLine("잘못된 레벨입니다.");
+					return;
+				}
+
 				m_nLv = a_nLv;
 			}
 

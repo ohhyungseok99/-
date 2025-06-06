@@ -240,7 +240,7 @@ namespace Example._02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.
 			public float Z { get; private set; } = 0.0f;
 
 			public float Length =>
-				(float)Math.Sqrt(Math.Pow(this.X, 2.0) + Math.Pow(this.Y, 2.0));
+				(float)Math.Sqrt(Math.Pow(this.X, 2.0) + Math.Pow(this.Y, 2.0) + Math.Pow(this.Z, 2.0));
 
 			/** 생성자 */
 			public CE01Vec_13(float a_fX = 0.0f, float a_fY = 0.0f, float a_fZ = 0.0f)

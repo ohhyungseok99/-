@@ -63,7 +63,7 @@ using System.Threading.Tasks;
  * Ex)
  * static class CSomeClass_Static
  * {
- *		static void SomeMethod_Extension(this int a_oSender)
+ *		static void SomeMethod_Extension(this int a_nSender)
  *		{
  *				// Do Something
  *		}
@@ -173,6 +173,8 @@ namespace Example._02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.
 
 			Console.WriteLine("=====> 리스트 <=====");
 			oListValues.E01ExPrintValues_13();
+
+			CE01Extension_13.E01ExPrintValues_13(oListValues);
 
 			Console.WriteLine("\n합계 : {0}", oListValues.E01ExGetVal_Sum_13());
 #elif P_E01_EXAMPLE_13_03

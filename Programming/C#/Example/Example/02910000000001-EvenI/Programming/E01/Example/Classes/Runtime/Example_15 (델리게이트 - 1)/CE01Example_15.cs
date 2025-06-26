@@ -1,5 +1,5 @@
 //#define P_E01_EXAMPLE_15_01
-//#define P_E01_EXAMPLE_15_02
+#define P_E01_EXAMPLE_15_02
 #define P_E01_EXAMPLE_15_03
 
 using System;
@@ -88,7 +88,7 @@ namespace Example._02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.
 			int nResult = oCompare(nValA, nValB);
 			Console.WriteLine("{0} Compare {1} = {2}", nValA, nValB, nResult);
 #elif P_E01_EXAMPLE_15_02
-			Console.Write("\n수식 입력 (+, -, *, /) : ");
+			Console.Write("수식 입력 (+, -, *, /) : ");
 			var oTokens = Console.ReadLine().Split();
 
 			int.TryParse(oTokens[0], out int nValA);

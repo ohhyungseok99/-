@@ -1,4 +1,4 @@
-//#define S_E01_EXAMPLE_02_01
+#define S_E01_EXAMPLE_02_01
 #define S_E01_EXAMPLE_02_02
 
 using System;

@@ -150,7 +150,7 @@ namespace Example
 #elif PRACTICE
 
 #elif SOLUTION
-
+2
 #endif // #if EXAMPLE
 		}
 

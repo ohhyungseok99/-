@@ -18,10 +18,12 @@
  * 기반으로 조건문을 작성하면 특정 명령문을 활성화하거나 비활성화하는 것이 가능하다.
  * 
  * Ex)
+ * #define PLATFORM_MOBILE
+ *
  * #if PLATFORM_MOBILE
- *      // 모바일 플랫폼 명령문
+ *      // 모바일 플랫폼 관련 명령문
  * #else
- *      // 기타 플랫폼 명령문
+ *      // 기타 플랫폼 관련 명령문
  * #endif
  * 
  * 위와 같이 전처리기 조건문을 활용하면 명령문을 특정 환경에서만 동작하도록 활성 및 비활성하는 것이
@@ -30,7 +32,7 @@
  * 
  * if ~ else ~ endif 명령어란?
  * - 전처리 단계에서 처리되는 조건문을 의미한다. (+ 즉, 해당 명령어를 활용하면 특정 명령문을
- * 컴파일 되지 않도록 비활성시키는 것이 가능하다.)
+ * 컴파일 되지 않도록 비활성 시키는 것이 가능하다.)
  * 
  * 단, 전처리기 조건문은 특정 조건에 해당하는 영역을 명시하기 위해서 반드시 endif 명령어로
  * 종료되어야한다. (+ 즉, 전처리기 조건문에는 { } 기호를 사용하는 것이 불가능하다는 것을
@@ -80,10 +82,10 @@ namespace Example
 		 * 종료된다는 것을 알 수 있다.)
 		 */
 		/** 메인 메서드 */
-		public static void Main(string[] args)
+		static void Main(string[] args)
 		{
-			Program.Main_Programming(args);
-			//Program.Main_Structure(args);
+			//Program.Main_Programming(args);
+			Program.Main_Structure(args);
 			//Program.Main_Algorithm(args);
 		}
 
@@ -102,7 +104,7 @@ namespace Example
 			 * 
 			 * 따라서 메서드를 활용하면 여러 기능들을 미리 만들어서 재사용하는 것이 가능하다.
 			 */
-			_02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.Example_01.CE01Example_01.Start(args);
+			//_02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.Example_01.CE01Example_01.Start(args);
 			//_02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.Example_02.CE01Example_02.Start(args);
 			//_02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.Example_03.CE01Example_03.Start(args);
 			//_02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.Example_04.CE01Example_04.Start(args);
@@ -121,7 +123,7 @@ namespace Example
 			//_02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.Example_17.CE01Example_17.Start(args);
 			//_02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.Example_18.CE01Example_18.Start(args);
 			//_02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.Example_19.CE01Example_19.Start(args);
-			//_02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.Example_20.CE01Example_20.Start(args);
+			_02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.Example_20.CE01Example_20.Start(args);
 #elif PRACTICE
 
 #elif SOLUTION
@@ -129,6 +131,10 @@ namespace Example
 #endif // #if EXAMPLE
 		}
 
+		/*
+		 * 자료구조 과제 1
+		 * - 더미 헤드를 사용한 단방향 연결 리스트 구현하기
+		 */
 		/** 자료구조 메인 메서드 */
 		private static void Main_Structure(string[] args)
 		{
@@ -136,15 +142,15 @@ namespace Example
 			//_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_01.CE01Example_01.Start(args);
 			//_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_02.CE01Example_02.Start(args);
 			//_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_03.CE01Example_03.Start(args);
-			//_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_04.CE01Example_04.Start(args);
+			_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_04.CE01Example_04.Start(args);
 			//_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_05.CE01Example_05.Start(args);
 			//_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_06.CE01Example_06.Start(args);
 			//_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_07.CE01Example_07.Start(args);
-			_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_08.CE01Example_08.Start(args);
+			//_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_08.CE01Example_08.Start(args);
 #elif PRACTICE
 
 #elif SOLUTION
-
+2
 #endif // #if EXAMPLE
 		}
 
@@ -152,7 +158,7 @@ namespace Example
 		private static void Main_Algorithm(string[] args)
 		{
 #if EXAMPLE
-			//_02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Example_01.CE01Example_01.Start(args);
+			_02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Example_01.CE01Example_01.Start(args);
 			//_02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Example_02.CE01Example_02.Start(args);
 			//_02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Example_03.CE01Example_03.Start(args);
 			//_02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Example_04.CE01Example_04.Start(args);
@@ -160,7 +166,7 @@ namespace Example
 			//_02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Example_06.CE01Example_06.Start(args);
 			//_02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Example_07.CE01Example_07.Start(args);
 			//_02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Example_08.CE01Example_08.Start(args);
-			_02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Example_09.CE01Example_09.Start(args);
+			//_02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Example_09.CE01Example_09.Start(args);
 #elif PRACTICE
 
 #elif SOLUTION

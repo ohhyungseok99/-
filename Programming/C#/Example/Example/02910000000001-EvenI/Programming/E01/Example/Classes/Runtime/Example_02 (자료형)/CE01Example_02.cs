@@ -33,21 +33,21 @@ using System.Threading.Tasks;
  * 
  * C# 값 형식 자료형 종류
  * // 정수
- * - byte or sbyte : 1 바이트
- * - short or ushort : 2 바이트
- * - int or uint : 4 바이트
- * - long or ulong : 8 바이트
+ * - byte or sbyte : 1 Byte
+ * - short or ushort : 2 Byte
+ * - int or uint : 4 Byte
+ * - long or ulong : 8 Byte
  * 
  * // 실수
- * - float : 4 바이트 (부동 소수점)
- * - double : 8 바이트 (부동 소수점)
- * - decimal : 16 바이트 (고정 소수점)
+ * - float : 4 Byte (부동 소수점)
+ * - double : 8 Byte (부동 소수점)
+ * - decimal : 16 Byte (고정 소수점)
  * 
  * // 논리
- * - bool : 1 바이트
+ * - bool : 1 Byte
  * 
  * // 문자
- * - char : 2 바이트
+ * - char : 2 Byte
  * 
  * // 기타
  * - enum
@@ -154,8 +154,8 @@ using System.Threading.Tasks;
  * 변경하는 것은 불가능하다. (+ 즉, 읽어들이는 것만 가능하다.)
  * 
  * C# 상수 종류
- * - 리터널 상수		<- 이름이 없는 상수 (+ Ex. 0, "A" 등등...)
- * - 심볼릭 상수		<- 이름이 존재하는 상수
+ * - 리터널 상수			<- 이름이 없는 상수 (+ Ex. 0, "A" 등등...)
+ * - 심볼릭 상수			<- 이름이 존재하는 상수
  * 
  * C# 심볼릭 상수 선언 방법
  * - const + 자료형 + 상수 이름

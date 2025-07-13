@@ -33,6 +33,7 @@ using System.Threading.Tasks;
  * }
  * 
  * CSomeClass oSomeObj = new CSomeClass();
+ * oSomeObj.SomeMethod();
  * 
  * 위와 같이 정의 된 클래스는 자료형처럼 사용하는 것이 가능하며 new 키워드를 통해 사물 (객체) 을 
  * 생성하는 것이 가능하다. (+ 즉, 클래스는 사물을 생성하기 위한 틀처럼 활용된다는 것을 알 수 있다.)
@@ -207,9 +208,9 @@ namespace Example._02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.
 		 * 특정 멤버에 접근 할 수 있는 범위를 제한하는 것이 가능하다.)
 		 * 
 		 * C# 주요 접근 제어 지시자 종류
-		 * - public			<- 클래스 내부와 외부에서 모두 접근 허용
-		 * - protected		<- 클래스 내부와 자식 클래스에서 접근 허용
-		 * - private		<- 클래스 내부에서 접근 허용
+		 * - public				<- 클래스 내부와 외부에서 모두 접근 허용
+		 * - protected			<- 클래스 내부와 자식 클래스에서 접근 허용
+		 * - private			<- 클래스 내부에서 접근 허용
 		 * 
 		 * Ex)
 		 * class CSomeClass
@@ -250,7 +251,7 @@ namespace Example._02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.
 				this.m_nHp = a_nHp;
 				this.m_nAtk = a_nAtk;
 			}
-
+			
 			/** 레벨을 반환한다 */
 			public int GetLv()
 			{
@@ -272,6 +273,12 @@ namespace Example._02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.
 			/** 레벨을 변경한다 */
 			public void SetLv(int a_nLv)
 			{
+				if(a_nLv > 45)
+				{
+					Console.WriteLine("잘못된 레벨입니다.");
+					return;
+				}
+
 				m_nLv = a_nLv;
 			}
 

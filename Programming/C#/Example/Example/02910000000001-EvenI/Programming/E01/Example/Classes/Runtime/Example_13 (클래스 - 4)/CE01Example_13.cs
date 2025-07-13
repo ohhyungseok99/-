@@ -41,7 +41,7 @@ using System.Threading.Tasks;
  * - static + class + 클래스 + 클래스 멤버
  * 
  * Ex)
- * static class CSomeStaticClass
+ * static class CSomeClass_Static
  * {
  *		// Do Something
  * }
@@ -61,9 +61,9 @@ using System.Threading.Tasks;
  * 확장 메서드를 통한 기능의 확장이 불가능하다는 것을 알 수 있다.)
  * 
  * Ex)
- * static class CSomeStaticClass
+ * static class CSomeClass_Static
  * {
- *		static void SomeExtensionMethod(this int a_oSender)
+ *		static void SomeMethod_Extension(this int a_nSender)
  *		{
  *				// Do Something
  *		}
@@ -77,7 +77,7 @@ using System.Threading.Tasks;
  * 
  * Ex)
  * int nVal = 0;
- * nVal.SomeExtensionMethod();
+ * nVal.SomeMethod_Extension();
  * 
  * 위와 같이 확장 메서드는 . (멤버 지정 연산자) 를 통해 호출하는 것이 가능하다.
  * 
@@ -174,6 +174,8 @@ namespace Example._02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.
 			Console.WriteLine("=====> 리스트 <=====");
 			oListValues.E01ExPrintValues_13();
 
+			CE01Extension_13.E01ExPrintValues_13(oListValues);
+
 			Console.WriteLine("\n합계 : {0}", oListValues.E01ExGetVal_Sum_13());
 #elif P_E01_EXAMPLE_13_03
 			CE01Vec_13 oVecA = new CE01Vec_13(10.0f, 0.0f, 0.0f);
@@ -240,7 +242,7 @@ namespace Example._02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.
 			public float Z { get; private set; } = 0.0f;
 
 			public float Length =>
-				(float)Math.Sqrt(Math.Pow(this.X, 2.0) + Math.Pow(this.Y, 2.0));
+				(float)Math.Sqrt(Math.Pow(this.X, 2.0) + Math.Pow(this.Y, 2.0) + Math.Pow(this.Z, 2.0));
 
 			/** 생성자 */
 			public CE01Vec_13(float a_fX = 0.0f, float a_fY = 0.0f, float a_fZ = 0.0f)

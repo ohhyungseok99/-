@@ -18,10 +18,10 @@ using System.Threading.Tasks;
  * 프로그래밍의 메서드 (함수) 는 수학의 함수와 조금 다르다는 것을 알 수 있다.)
  * 
  * C# 메서드 유형
- * - 입력 O, 출력 O		<- int SomeMethod(int a_nVal);
- * - 입력 O, 출력 X		<- void SomeMethod(int a_nVal);
- * - 입력 X, 출력 O		<- int SomeMethod();
- * - 입력 X, 출력 X		<- void SomeMethod();
+ * - 입력 O, 출력 O			<- int SomeMethod(int a_nVal);
+ * - 입력 O, 출력 X			<- void SomeMethod(int a_nVal);
+ * - 입력 X, 출력 O			<- int SomeMethod();
+ * - 입력 X, 출력 X			<- void SomeMethod();
  * 
  * 위와 같이 메서드는 입력 데이터와 출력 데이터의 존재 여부에 따라 크게 4 가지 유형으로 구분된다는 
  * 것을 알 수 있다.
@@ -34,6 +34,8 @@ using System.Threading.Tasks;
  * {
  *		// 메서드가 호출 될 때 실행 될 명령문
  * }
+ * 
+ * SomeMethod(10, 20);
  * 
  * 단, 메서드의 입력 (매개 변수) 은 원하는 만큼 명시하는 것이 가능하지만 메서드의 출력은 하나만 
  * 명시하는 것이 가능하다. (+ 즉, 입력 데이터는 여러 개를 받는 것이 가능하지만 
@@ -158,7 +160,7 @@ namespace Example._02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.
 			/*
 			 * return 키워드란?
 			 * - 프로그램의 흐름을 중단하고 해당 메서드를 호출한 곳으로 되돌리는 역할을 수행하는 
-			 * 키워드를 의미한다. (+ 즉, 해당 키워드를 활용하면 특정 메서드의 실행을 중지시키는 것이 
+			 * 키워드를 의미한다. (+ 즉, 해당 키워드를 활용하면 특정 메서드의 실행을 중지 시키는 것이 
 			 * 가능하다.)
 			 * 
 			 * 또한 메서드가 반환 값이 존재 할 경우 return 키워드에 반환 값을 반드시 명시해야되며 

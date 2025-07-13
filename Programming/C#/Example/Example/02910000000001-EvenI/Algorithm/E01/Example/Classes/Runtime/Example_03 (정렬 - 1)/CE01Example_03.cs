@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 /*
  * 정렬 (Sorting) 이란?
- * - 데이터의 집합에 존재하는 데이터들을 일정 규칙 (+ Ex. 오른차순 등등...) 에 맞춰서 나열하는 것을 
+ * - 데이터의 집합에 존재하는 데이터들을 일정 규칙 (+ Ex. 오름차순 등등...) 에 맞춰서 나열하는 것을 
  * 의미한다. (+ 즉, 정렬은 주로 데이터 탐색을 수월하게 하기 위해서 수행된다는 것을 알 수 있다.)
  * 
  * 정렬은 내부적으로 데이터가 정렬되는 결과에 따라 안정 정렬과 불안정 정렬로 구분된다. (+ 즉,
@@ -18,19 +18,19 @@ using System.Threading.Tasks;
  * 불안정 정렬이라는 것을 알 수 있다.)
  * 
  * 안정 정렬 알고리즘 종류
- * - 버블 정렬 (Bubble Sorting)
- * - 삽입 정렬 (Insertion Sorting)
- * - 병합 정렬 (Merge Sorting)
+ * - 버블 정렬 (Bubble Sort)
+ * - 삽입 정렬 (Insertion Sort)
+ * - 병합 정렬 (Merge Sort)
  * 
- * 버블 정렬 (Bubble Sorting) 이란?
+ * 버블 정렬 (Bubble Sort) 이란?
  * - 인접한 데이터를 비교 후 정렬 기준에 맞게 위치를 변경하는 과정을 반복함으로서 모든 데이터를
  * 정렬하는 알고리즘을 의미한다.
  * 
- * 삽입 정렬 (Insertion Sorting) 이란?
+ * 삽입 정렬 (Insertion Sort) 이란?
  * - 데이터를 정렬 기준에 맞게 특정 위치로 옮기는 과정을 반복함으로서 모든 데이터를 정렬하는
  * 알고리즘을 의미한다.
  * 
- * 병합 정렬 (Merge Sorting) 이란?
+ * 병합 정렬 (Merge Sort) 이란?
  * - 데이터를 더이상 나눌 수 없을때까지 절반씩 그룹을 지어준 후 그룹 하위에 있는 데이터를
  * 상위 그룹에 합치는 과정을 반복함으로서 모든 데이터를 정렬하는 알고리즘을 의미한다. (+ 즉, 
  * 하위 그룹의 데이터를 상위 그룹에 합치는 과정에서 데이터의 정렬이 이루어진다는 것을 알 수 있다.)
@@ -53,17 +53,17 @@ namespace Example._02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Ex
 				oListValues.Add(oRandom.Next(1, 100));
 			}
 
-			Console.WriteLine("=====> 리스트 요소 - 정렬 전 <=====");
+			Console.WriteLine("=====> 리스트 - 정렬 전 <=====");
 			E01PrintValues_03(oListValues);
 
 			E01SortValues_03(oListValues, E01Compare_ByAscending_03);
 
-			Console.WriteLine("\n=====> 리스트 요소 - 정렬 후 (오름차순) <=====");
+			Console.WriteLine("\n=====> 리스트 - 정렬 후 (오름차순) <=====");
 			E01PrintValues_03(oListValues);
 
 			E01SortValues_03(oListValues, E01Compare_ByDescending_03);
 
-			Console.WriteLine("\n=====> 리스트 요소 - 정렬 후 (내림차순) <=====");
+			Console.WriteLine("\n=====> 리스트 - 정렬 후 (내림차순) <=====");
 			E01PrintValues_03(oListValues);
 		}
 

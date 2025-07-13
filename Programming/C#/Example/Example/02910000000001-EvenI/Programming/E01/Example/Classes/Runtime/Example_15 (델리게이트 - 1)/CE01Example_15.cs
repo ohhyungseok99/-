@@ -1,5 +1,5 @@
 //#define P_E01_EXAMPLE_15_01
-//#define P_E01_EXAMPLE_15_02
+#define P_E01_EXAMPLE_15_02
 #define P_E01_EXAMPLE_15_03
 
 using System;
@@ -27,7 +27,7 @@ using P_E01_EXAMPLE_15 = Example._02910000000001_EvenI.Programming.E01.Example.C
  * - delegate + 반환 형 + 델리게이트 이름 + 매개 변수
  * 
  * Ex)
- * delegate void SomeDelegate(int, int)
+ * delegate void SomeDelegate(int a_nValA, int a_nValB)
  * 
  * 위의 경우 정수 2 개를 입력으로 받고 출력은 존재하지 않는 메서드에 대한 델리게이트를 선언이라는
  * 것을 알 수 있다.
@@ -40,7 +40,7 @@ using P_E01_EXAMPLE_15 = Example._02910000000001_EvenI.Programming.E01.Example.C
 public static partial class CE01Extension_15
 {
 	/** 값을 정렬한다 */
-	public static void E01ExSort_15<T>(this List<T> a_oSender,
+	public static void E01ExSortValues_15<T>(this List<T> a_oSender,
 		P_E01_EXAMPLE_15.CE01Example_15.E01Compare_15<T> a_oCompare)
 	{
 		for(int i = 1; i < a_oSender.Count; ++i)
@@ -88,11 +88,11 @@ namespace Example._02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.
 			int nResult = oCompare(nValA, nValB);
 			Console.WriteLine("{0} Compare {1} = {2}", nValA, nValB, nResult);
 #elif P_E01_EXAMPLE_15_02
-			Console.Write("\n수식 입력 (+, -, *, /) : ");
+			Console.Write("수식 입력 (+, -, *, /) : ");
 			var oTokens = Console.ReadLine().Split();
 
 			int.TryParse(oTokens[0], out int nValA);
-			int.TryParse(oTokens[1], out int nValB);
+			int.TryParse(oTokens[2], out int nValB);
 
 			char.TryParse(oTokens[1], out char chOperator);
 			E01Calculator_15 oCalc = E01GetCalc_15(chOperator);
@@ -133,8 +133,8 @@ namespace Example._02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.
 				Console.Write("{0:0.00}, ", oListValuesB[i]);
 			}
 
-			oListValuesA.E01ExSort_15(E01Compare_ByAscending_15);
-			oListValuesB.E01ExSort_15(E01Compare_ByDescending_15);
+			oListValuesA.E01ExSortValues_15(E01Compare_ByAscending_15);
+			oListValuesB.E01ExSortValues_15(E01Compare_ByDescending_15);
 
 			Console.WriteLine("\n\n=====> 정렬 후 <=====");
 

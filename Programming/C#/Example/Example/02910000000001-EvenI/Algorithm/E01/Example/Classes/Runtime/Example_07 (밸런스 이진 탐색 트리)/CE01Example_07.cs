@@ -67,7 +67,7 @@ using System.Threading.Tasks;
  * 
  * 레드 블랙 트리에 데이터 추가 규칙
  * - 새로 추가되는 데이터는 빨간색 노드이다. (+ 즉, 빨간색 노드를 추가함으로서 주의 해야 될 규칙을
- * 4 번 규칙만으로 단순화시키는 것이 가능하다.)
+ * 4 번 규칙만으로 단순화 시키는 것이 가능하다.)
  * 
  * - 새로 추가 된 노드의 부모 노드가 검은색 일 경우 레드 블랙 트리의 모든 규칙을 만족한다. (+ 즉,
  * 부모 노드가 검은색 일 경우 별도의 처리 과정이 필요없다는 것을 의미한다.)
@@ -152,7 +152,7 @@ namespace Example._02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Ex
 				oTreeValues.AddVal(oRandom.Next(1, 100));
 			}
 
-			Console.WriteLine("=====> AVL 트리 요소 <=====");
+			Console.WriteLine("=====> AVL 트리 <=====");
 
 			oTreeValues.Enumerate(CE01Tree_AVL_07<int>.EOrder.IN, (a_nDepth, a_nVal) =>
 			{
@@ -165,7 +165,7 @@ namespace Example._02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Ex
 			});
 
 			oTreeValues.AddVal(100);
-			Console.WriteLine("\n=====> AVL 트리 요소 - 추가 후 <=====");
+			Console.WriteLine("\n=====> AVL 트리 - 추가 후 <=====");
 
 			oTreeValues.Enumerate(CE01Tree_AVL_07<int>.EOrder.IN, (a_nDepth, a_nVal) =>
 			{
@@ -178,7 +178,7 @@ namespace Example._02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Ex
 			});
 
 			oTreeValues.RemoveVal(100);
-			Console.WriteLine("\n=====> AVL 트리 요소 - 제거 후 <=====");
+			Console.WriteLine("\n=====> AVL 트리 - 제거 후 <=====");
 
 			oTreeValues.Enumerate(CE01Tree_AVL_07<int>.EOrder.IN, (a_nDepth, a_nVal) =>
 			{
@@ -198,7 +198,7 @@ namespace Example._02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Ex
 				oTreeValues.AddVal(oRandom.Next(1, 100));
 			}
 
-			Console.WriteLine("=====> 레드 블랙 트리 요소 <=====");
+			Console.WriteLine("=====> 레드 블랙 트리 <=====");
 
 			oTreeValues.Enumerate(CE01Tree_RedBlack_07<int>.EOrder.IN, (a_nDepth, a_nVal) =>
 			{
@@ -211,7 +211,7 @@ namespace Example._02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Ex
 			});
 
 			oTreeValues.AddVal(100);
-			Console.WriteLine("\n=====> 레드 블랙 트리 요소 - 추가 후 <=====");
+			Console.WriteLine("\n=====> 레드 블랙 트리 - 추가 후 <=====");
 
 			oTreeValues.Enumerate(CE01Tree_RedBlack_07<int>.EOrder.IN, (a_nDepth, a_nVal) =>
 			{
@@ -224,7 +224,7 @@ namespace Example._02910000000001_EvenI.Algorithm.E01.Example.Classes.Runtime.Ex
 			});
 
 			oTreeValues.RemoveVal(100);
-			Console.WriteLine("\n=====> 레드 블랙 트리 요소 - 제거 후 <=====");
+			Console.WriteLine("\n=====> 레드 블랙 트리 - 제거 후 <=====");
 
 			oTreeValues.Enumerate(CE01Tree_RedBlack_07<int>.EOrder.IN, (a_nDepth, a_nVal) =>
 			{

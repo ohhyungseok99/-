@@ -82,6 +82,7 @@ using System.Threading.Tasks;
  *		// Do Something
  * }
  * 
+ * SomeMethod(10, 20);
  * SomeMethod(a_nValB: 10, a_nValA: 20);
  * 
  * 위와 같이 입력 데이터를 전달 받을 매개 변수를 직접 명시하는 것이 가능하다.

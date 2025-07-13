@@ -23,8 +23,8 @@ using System.Threading.Tasks;
  * - 매개 변수 + 람다 몸체
  * 
  * Ex)
- * (int a_nValA, int a_nValB) => a_nValA + a_nValB					<- 람다식 (식 형식)
- * (int a_nValB, int a_nValB) => { return a_nValA + a_nValB; }		<- 람다문 (문 형식)
+ * (int a_nValA, int a_nValB) => a_nValA + a_nValB						<- 람다식 (식 형식)
+ * (int a_nValB, int a_nValB) => { return a_nValA + a_nValB; }			<- 람다문 (문 형식)
  * 
  * C# 람다는 식 형식과 문 형식 의 형태를 제공한다. 
  * 
@@ -48,12 +48,12 @@ using System.Threading.Tasks;
  * 사용하는 것이 일반적이다.)
  * 
  * C# 이 지원하는 델리게이트 종류
- * - Action		<- 반환 값이 없는 메서드에 대한 델리게이트
- * - Func		<- 반환 값이 존재하는 메서드에 대한 델리게이트
+ * - Action			<- 반환 값이 없는 메서드에 대한 델리게이트
+ * - Func			<- 반환 값이 존재하는 메서드에 대한 델리게이트
  * 
  * Ex)
- * Action<int, float>		<- 정수 1 개, 실수 1 개를 입력으로 받는 메서드에 대한 델리게이트
- * Func<int, float>			<- 정수 1 개를 입력으로 받고 실수를 출력하는 메서드에 대한 델리게이트
+ * Action<int, float>			<- 정수 1 개, 실수 1 개를 입력으로 받는 메서드에 대한 델리게이트
+ * Func<int, float>				<- 정수 1 개를 입력으로 받고 실수를 출력하는 메서드에 대한 델리게이트
  */
 namespace Example._02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.Example_16
 {
@@ -74,7 +74,7 @@ namespace Example._02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.
 				oListValues.Add(oRandom.Next(1, 100));
 			}
 
-			Console.WriteLine("=====> 리스트 요소 <=====");
+			Console.WriteLine("=====> 리스트 <=====");
 
 			for(int i = 0; i < oListValues.Count; ++i)
 			{
@@ -112,7 +112,7 @@ namespace Example._02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.
 				oListValues.Add(oRandom.Next(1, 100));
 			}
 
-			Console.WriteLine("=====> 리스트 요소 <=====");
+			Console.WriteLine("=====> 리스트 <=====");
 
 			for(int i = 0; i < oListValues.Count; ++i)
 			{
@@ -171,12 +171,12 @@ namespace Example._02910000000001_EvenI.Programming.E01.Example.Classes.Runtime.
 
 			oPrinter -= E01PrintMsgB_16;
 
-			Console.WriteLine("=====> 델리게이트 체인 - 제거 후 <=====");
+			Console.WriteLine("\n=====> 델리게이트 체인 - 제거 후 <=====");
 			Console.WriteLine("{0}", oPrinter());
 
 			oPrinter = E01PrintMsgA_16;
 
-			Console.WriteLine("=====> 델리게이트 체인 - 할당 후 <=====");
+			Console.WriteLine("\n=====> 델리게이트 체인 - 할당 후 <=====");
 			Console.WriteLine("{0}", oPrinter());
 #endif // P_E01_EXAMPLE_16_01
 		}

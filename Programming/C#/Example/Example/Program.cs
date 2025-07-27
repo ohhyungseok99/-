@@ -148,7 +148,8 @@ namespace Example
 			//_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_07.CE01Example_07.Start(args);
 			//_02910000000001_EvenI.Structure.E01.Example.Classes.Runtime.Example_08.CE01Example_08.Start(args);
 #elif PRACTICE
-			_02910000000001_EvenI.Structure.E01.Practice.Classes.Runtime.Practice_01.LinkedList_Program.start();
+			//_02910000000001_EvenI.Structure.E01.Practice.Classes.Runtime.Practice_01.LinkedList_Program.start();
+			_02910000000001_EvenI.Structure.E01.Practice.Classes.Runtime.Practice_01.Queue_Program.start();
 #elif SOLUTION
 2
 #endif // #if EXAMPLE
